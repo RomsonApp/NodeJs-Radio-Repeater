@@ -14,7 +14,6 @@ function handler(req, res) {
 	});
 	
 	http.get(radioServer, function(response){
-		console.log(response.clients);
 		response.on('data', function (data) {
 			res.write(data);
 		});
