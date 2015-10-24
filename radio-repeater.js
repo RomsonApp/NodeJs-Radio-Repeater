@@ -10,7 +10,7 @@ console.log('Server is created');
 function handler(req, res) {
 	res.writeHead(200, {
 		'Content-Type':'audio/mpeg',
-		'Access-Control-Allow-Origin': 'http://localhost'
+		'Access-Control-Allow-Origin': '*'
 	});
 	
 	http.get(radioServer, function(response){
